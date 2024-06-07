@@ -1,0 +1,37 @@
+/* Josefin Sans */
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("JosefinSans-Regular.woff") format("woff");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("JosefinSans-Medium.woff") format("woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("JosefinSans-Bold.woff") format("woff");
+  font-weight: 700;
+}
+
+/* Roboto */
+@font-face {
+  font-family: "Roboto";
+  src: url("Roboto-Regular.woff") format("woff");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("Roboto-Medium.woff") format("woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("Roboto-Bold.woff") format("woff");
+  font-weight: 700;
+}

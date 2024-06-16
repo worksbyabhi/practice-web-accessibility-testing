@@ -47,7 +47,6 @@ export default function Page() {
   };
 
   const formSubmitAction = () => {
-    console.log("here");
     setShowNotification(false);
     setTimeout(() => {
       if (!nameFormData) {
@@ -118,6 +117,7 @@ export default function Page() {
                   id="name"
                   aria-describedby="name-hint name-error"
                   error={!nameError}
+                  aria-invalid={!!nameError}
                 ></StyledInput>
                 <FormFieldError id="name-error">{nameError}</FormFieldError>
               </InputWrapper>

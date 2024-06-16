@@ -10,7 +10,10 @@ const nextConfig = {
     };
     return config;
   },
-  basePath: "/practice-web-accessibility-testing",
+  basePath:
+    process.env.NODE_ENV === "development"
+      ? ""
+      : "/practice-web-accessibility-testing",
 };
 
 export default nextConfig;

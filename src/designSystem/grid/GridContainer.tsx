@@ -7,7 +7,7 @@ export interface GridContainerProps {
 export const GridContainer = styled.div<GridContainerProps>`
   display: grid;
   grid-column: ${(props) => `span ${props.theme.grid.small.columns}`};
-  width: ${(props) =>
+  max-width: ${(props) =>
     props.child
       ? "100%"
       : `calc(100% - ${props.theme.grid.small.margin * 2}px)`};
@@ -20,7 +20,7 @@ export const GridContainer = styled.div<GridContainerProps>`
   ${({ theme, child }) => css`
     @media screen and (min-width: ${`${theme.breakpoints.medium}px`}) {
       grid-column: ${(props) => `span ${props.theme.grid.medium.columns}`};
-      width: ${child
+      max-width: ${child
         ? "100%"
         : `calc(100% - ${theme.grid.medium.margin * 2}px)`};
       grid-template-columns: ${`repeat(${theme.grid.medium.columns}, 1fr)`};
@@ -30,7 +30,7 @@ export const GridContainer = styled.div<GridContainerProps>`
 
     @media screen and (min-width: ${`${theme.breakpoints.large}px`}) {
       grid-column: ${(props) => `span ${props.theme.grid.large.columns}`};
-      width: ${child
+      max-width: ${child
         ? "100%"
         : `${
             theme.grid.large.width

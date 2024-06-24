@@ -54,3 +54,19 @@ export const ToolsIUse = styled(GridColumn)`
     }
   `}
 `;
+
+export const MainAndAsideContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+  }
+`;
+
+export const MainWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+`;

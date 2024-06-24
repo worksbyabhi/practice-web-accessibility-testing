@@ -16,7 +16,8 @@ export const StyledFooter = styled.footer`
       align-items: center;
     }
 
-    &:hover svg {
+    &:hover svg,
+    &:focus svg {
       transform: rotate(-40deg);
     }
 

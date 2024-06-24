@@ -7,10 +7,12 @@ import Link from "next/link";
 import { LinkContainer, MainContainer, ToolsIUse } from "./style";
 import { Footer } from "@/components/Footer";
 import { LinkSame } from "@/assets/svg";
+import ScreenReaderText from "@/designSystem/ScreenReaderText";
 
 export default function Home() {
   return (
     <MainContainer as="div">
+      <Placeholder height="2rem" />
       <MainContainer>
         <GridContainer>
           <GridContainer child>
@@ -45,33 +47,42 @@ export default function Home() {
                 href="https://support.apple.com/en-gb/guide/voiceover/welcome/mac"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Open Voiceover guide in a new tab"
               >
-                Voiceover (Mac) <LinkSame />
+                <ScreenReaderText>Open</ScreenReaderText>Voiceover (Mac){" "}
+                <LinkSame />
+                <ScreenReaderText>guide in a new tab</ScreenReaderText>
               </a>
               <a
                 href="https://www.nvaccess.org/download/"
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Open NVDA website in a new tab"
               >
-                NVDA (windows) <LinkSame />
+                <ScreenReaderText>Open</ScreenReaderText>NVDA (windows){" "}
+                <LinkSame />
+                <ScreenReaderText>in a new tab</ScreenReaderText>
               </a>
               <a
-                href="https://chromewebstore.google.com/detail/siteimprove-accessibility/djcglbmbegflehmbfleechkjhmedcopn?hl=en"
+                href="https://www.siteimprove.com/integrations/browser-extensions/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Open Siteimprove Accessibility Checker chrome extension in a new tab"
               >
-                Siteimprove <LinkSame />
+                <ScreenReaderText>Open</ScreenReaderText>Siteimprove{" "}
+                <LinkSame />
+                <ScreenReaderText>
+                  browser extension in a new tab
+                </ScreenReaderText>
               </a>
               <a
-                href="https://chromewebstore.google.com/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh?hl=en"
+                href="https://wave.webaim.org/extension/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Open wave evaluation tool chrome extension in a new tab"
               >
-                WAVE <LinkSame />
+                <ScreenReaderText>Open</ScreenReaderText>WAVE <LinkSame />
+                <ScreenReaderText>
+                  browser extension in a new tab
+                </ScreenReaderText>
               </a>
             </ToolsIUse>
           </GridContainer>

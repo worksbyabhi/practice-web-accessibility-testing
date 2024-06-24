@@ -7,6 +7,8 @@ export const MainContainer = styled.main`
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  position: relative;
+  margin-top: 3rem;
 `;
 
 export const LinkContainer = styled.div`
@@ -32,7 +34,8 @@ export const ToolsIUse = styled(GridColumn)`
       align-items: center;
     }
 
-    &:hover svg {
+    &:hover svg,
+    &:focus svg {
       transform: rotate(-40deg);
     }
 

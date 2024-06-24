@@ -1,9 +1,7 @@
 import React from "react";
-import { StyledLink, StyledNav } from "./style";
-import Link from "next/link";
+import { StyledHomeLink, StyledLink, StyledNav } from "./style";
 import { HomeSVG } from "./HomeSVG";
 import { LinkSame } from "@/assets/svg";
-import SkipToContent from "../SkipToContent";
 
 export interface NavBarProps {
   as?: string;
@@ -12,11 +10,10 @@ export interface NavBarProps {
 
 export const NavBar = (props: NavBarProps) => {
   return (
-    <StyledNav as={props.as ?? ""}>
-      <SkipToContent />
-      <Link href={"/"} aria-label={props.isValid ? "Go to home" : ""}>
+    <StyledNav as={props.as ?? ""} aria-label="Demo">
+      <StyledHomeLink href={"/"} aria-label={props.isValid ? "Go to home" : ""}>
         <HomeSVG />
-      </Link>
+      </StyledHomeLink>
       <div style={{ flexGrow: 1 }} />
       {props.isValid ? (
         <StyledLink href={"/invalid-page"} style={{ color: "#f5f5f5" }}>

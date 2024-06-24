@@ -3,19 +3,19 @@ import styled from "styled-components";
 
 export const StyledNav = styled.nav`
   width: 100%;
-  height: 5rem;
-  position: fixed;
+  height: 4rem;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 11;
-  background: ${(props) => props.theme.colors.primary};
+  background: ${(props) => props.theme.colors.secondary};
   color: ${(props) => props.theme.colors.background};
   display: flex;
   transition: all 0.5s;
   font-family: "Josefin Sans", sans-serif, Arial;
   backdrop-filter: blur(2px);
   align-items: center;
-  padding: 0 2rem;
+  padding: 0 2rem 0 1.5rem;
 
   .logo-home-button {
     background: transparent;
@@ -91,7 +91,8 @@ export const StyledLink = styled(Link)`
   align-items: center;
   gap: 4px;
 
-  &:hover {
+  &:hover,
+  &:focus {
     border-bottom: 1px solid #f5f5f5;
 
     svg {
@@ -104,5 +105,25 @@ export const StyledLink = styled(Link)`
     height: 1rem;
     fill: ${(props) => props.theme.colors.background};
     transition: all 0.5s;
+  }
+`;
+
+export const StyledHomeLink = styled(Link)`
+  width: 4rem;
+  height: 4rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  svg {
+    width: 3rem;
+    height: 3rem;
+    transition: all 0.5s;
+  }
+
+  &:hover svg,
+  &:focus svg {
+    transform: scale(1.2);
   }
 `;

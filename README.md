@@ -3,7 +3,9 @@
 <p align="center">
 Grab your favourite accessibility tool and lets get started!
   <br>
-  <a href="https://worksbyabhi.github.io/practice-web-accessibility-testing/"><strong>See it in Action »</strong></a>
+  <a href="https://worksbyabhi.com/practice-web-accessibility-testing/" target="_blank"><strong>See it in Action »</strong></a>
+  <br>
+  <a href="https://www.youtube.com/watch?v=TVqmMGLD2cc&list=PLHUC7aTUnujuwwcBPV9MjT9OaOL83OG9y&index=1" target="_blank"><strong>Watch youtube playlist »</strong></a>
   <br>
   <br>
   :star: <span >If you find this project useful, please consider giving a star on GitHub!</span>

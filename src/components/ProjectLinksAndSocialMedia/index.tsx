@@ -20,7 +20,7 @@ export const ProjectLinksAndSocialMedia = ({ as }: { as?: string }) => {
         </li>
         <li>
           <a
-            href="https://www.youtube.com/@worksbyabhi"
+            href="https://www.youtube.com/watch?v=TVqmMGLD2cc&list=PLHUC7aTUnujuwwcBPV9MjT9OaOL83OG9y&index=1"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -46,6 +46,15 @@ export const ProjectLinksAndSocialMedia = ({ as }: { as?: string }) => {
             rel="noopener noreferrer"
           >
             GitHub <LinkSame />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://medium.com/@worksbyabhi"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Youtube <LinkSame />
           </a>
         </li>
         <li>

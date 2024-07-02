@@ -8,8 +8,16 @@ import { LinkContainer, MainContainer, ToolsIUse } from "./style";
 import { Footer } from "@/components/Footer";
 import { LinkSame } from "@/assets/svg";
 import ScreenReaderText from "@/designSystem/ScreenReaderText";
+import { useEffect, useRef } from "react";
 
 export default function Home() {
+  const h1Ref = useRef<HTMLHeadingElement>(null);
+
+  useEffect(() => {
+    console.log(h1Ref.current);
+    h1Ref.current?.focus();
+  }, []);
+
   return (
     <MainContainer as="div">
       <Placeholder height="2rem" />
@@ -18,7 +26,9 @@ export default function Home() {
           <GridContainer child>
             <GridColumn style={{ alignItems: "center" }}>
               <Placeholder height="4rem" />
-              <h1>Practice Web Accessibility Testing</h1>
+              <h1 ref={h1Ref} tabIndex={-1}>
+                Practice Web Accessibility Testing
+              </h1>
               <Placeholder height="2rem" />
               <p>
                 Grab your favourite accessibility tool and lets get started!

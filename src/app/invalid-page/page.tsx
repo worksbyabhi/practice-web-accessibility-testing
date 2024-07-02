@@ -21,6 +21,7 @@ import FruitSelector from "@/components/FruitSelector";
 import { Notification } from "@/designSystem/Notification";
 import { NotificationType } from "@/designSystem/Notification/type";
 import { ProjectLinksAndSocialMedia } from "@/components/ProjectLinksAndSocialMedia";
+import { Add } from "@/assets/svg";
 
 export default function Page() {
   const [age, setAge] = useState(18);
@@ -128,7 +129,7 @@ export default function Page() {
                         isInaccessible
                         onClick={() => setAge(age + 1)}
                       >
-                        +
+                        <Add />
                       </Button>
                     </div>
                     <FormFieldError />

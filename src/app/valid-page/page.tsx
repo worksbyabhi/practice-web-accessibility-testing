@@ -21,6 +21,7 @@ import { ChangeEvent, useEffect, useRef, useState } from "react";
 import FruitSelector from "@/components/FruitSelector";
 import { NotificationType } from "@/designSystem/Notification/type";
 import { ProjectLinksAndSocialMedia } from "@/components/ProjectLinksAndSocialMedia";
+import { Add } from "@/assets/svg";
 
 export default function Page() {
   const [age, setAge] = useState(18);
@@ -143,7 +144,7 @@ export default function Page() {
                         aria-describedby="age-id"
                         onClick={() => setAge(age + 1)}
                       >
-                        +
+                        <Add />
                       </Button>
                     </div>
                     <FormFieldError />
